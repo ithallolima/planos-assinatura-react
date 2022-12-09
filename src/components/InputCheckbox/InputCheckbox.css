@@ -1,0 +1,38 @@
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  padding-inline: 2.4rem;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+
+.radio-wrapper + .checkbox-wrapper {
+  margin-top: 3.2rem;
+}
+
+.checkbox-wrapper + .checkbox-wrapper {
+  margin-top: 2.4rem;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  appearance: none;
+  border: .1rem solid rgba(255, 255, 255, .5);
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+  margin: .2rem 0 0 .4rem;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::before {
+  content: "✔";
+  color: var(--text-color);
+  position: relative;
+  top: -.3rem;
+  left: .2rem;
+  font-size: 1.4rem;
+}
+
+.checkbox-wrapper label {
+  width: 90%;
+  line-height: 130%;
+}
